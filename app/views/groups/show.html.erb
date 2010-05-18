@@ -1,0 +1,28 @@
+<% title "Group" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @group.name %>
+</p>
+<p>
+  <strong>Unit:</strong>
+  <%= @group.unit_id %>
+</p>
+<p>
+  <strong>Group Type:</strong>
+  <%= @group.group_type %>
+</p>
+<p>
+  <strong>Rank:</strong>
+  <%= @group.rank %>
+</p>
+<p>
+  <strong>Event:</strong>
+  <%= @group.event_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_group_path(@group) %> |
+  <%= link_to "Destroy", @group, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", groups_path %>
+</p>

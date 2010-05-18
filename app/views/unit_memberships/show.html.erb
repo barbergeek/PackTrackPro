@@ -1,0 +1,24 @@
+<% title "Unit Membership" %>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @unit_membership.unit_id %>
+</p>
+<p>
+  <strong>Person:</strong>
+  <%= @unit_membership.person_id %>
+</p>
+<p>
+  <strong>Role:</strong>
+  <%= @unit_membership.role %>
+</p>
+<p>
+  <strong>Active:</strong>
+  <%= @unit_membership.active %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_unit_membership_path(@unit_membership) %> |
+  <%= link_to "Destroy", @unit_membership, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", unit_memberships_path %>
+</p>

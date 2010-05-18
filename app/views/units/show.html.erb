@@ -1,0 +1,28 @@
+<% title "Unit" %>
+
+<p>
+  <strong>Designation:</strong>
+  <%= @unit.designation %>
+</p>
+<p>
+  <strong>Unit Type:</strong>
+  <%= @unit.unit_type %>
+</p>
+<p>
+  <strong>Council:</strong>
+  <%= @unit.council %>
+</p>
+<p>
+  <strong>District:</strong>
+  <%= @unit.district %>
+</p>
+<p>
+  <strong>Active:</strong>
+  <%= @unit.active %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_unit_path(@unit) %> |
+  <%= link_to "Destroy", @unit, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", units_path %>
+</p>

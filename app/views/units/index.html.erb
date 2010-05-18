@@ -1,0 +1,25 @@
+<% title "Units" %>
+
+<table>
+  <tr>
+    <th>Designation</th>
+    <th>Unit Type</th>
+    <th>Council</th>
+    <th>District</th>
+    <th>Active</th>
+  </tr>
+  <% for unit in @units %>
+    <tr>
+      <td><%= unit.designation %></td>
+      <td><%= unit.unit_type %></td>
+      <td><%= unit.council %></td>
+      <td><%= unit.district %></td>
+      <td><%= unit.active %></td>
+      <td><%= link_to "Show", unit %></td>
+      <td><%= link_to "Edit", edit_unit_path(unit) %></td>
+      <td><%= link_to "Destroy", unit, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Unit", new_unit_path %></p>

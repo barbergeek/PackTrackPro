@@ -1,0 +1,13 @@
+one:
+  name: MyString
+  unit_id: 1
+  group_type: MyString
+  rank: MyString
+  event_id: 1
+
+two:
+  name: MyString
+  unit_id: 1
+  group_type: MyString
+  rank: MyString
+  event_id: 1

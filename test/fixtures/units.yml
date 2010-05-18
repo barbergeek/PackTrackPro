@@ -1,0 +1,13 @@
+one:
+  designation: 1
+  unit_type: MyString
+  council: MyString
+  district: MyString
+  active: false
+
+two:
+  designation: 1
+  unit_type: MyString
+  council: MyString
+  district: MyString
+  active: false
