@@ -7,6 +7,8 @@ gem 'rails', '3.0.0.beta4'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'nifty-generators'
+gem 'formtastic', :git => "git://github.com/justinfrench/formtastic.git", :branch => 'rails3'
+gem 'validation_reflection'
 
 # Use unicorn as the web server
 # gem 'unicorn'

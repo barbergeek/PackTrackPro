@@ -1,24 +1,5 @@
-<%= form_for @unit do |f| %>
+<% semantic_form_for @unit do |f| %>
   <%= f.error_messages %>
-  <p>
-    <%= f.label :designation %><br />
-    <%= f.text_field :designation %>
-  </p>
-  <p>
-    <%= f.label :unit_type %><br />
-    <%= f.text_field :unit_type %>
-  </p>
-  <p>
-    <%= f.label :council %><br />
-    <%= f.text_field :council %>
-  </p>
-  <p>
-    <%= f.label :district %><br />
-    <%= f.text_field :district %>
-  </p>
-  <p>
-    <%= f.label :active %><br />
-    <%= f.check_box :active %>
-  </p>
-  <p><%= f.submit %></p>
+  <%= f.inputs %>
+  <%= f.buttons %>
 <% end %>
